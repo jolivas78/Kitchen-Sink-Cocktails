@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Sink Cocktails</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <!-- <img src="./ksc.webp" alt=""> -->
+    <h1 class="title1">Kitchen Sink Cocktails</h1>
+    <div class="all">
+    <div class="main" id="main">
+        <!-- search by ingredient -->
+        <div class="background-image1">
+        <p class="bigger">Create a cocktail from anything you have in your kitchen...</p>
+        <label class="bigger" for="ingredient-search">Search by ingredients</label>
+        <input class="input1" type="search" id="ingredient-input">
+        <button class="ingredient-search button is-primary" id="ingredient-search">Search</button>
+        <!-- search by cocktail name -->
+        <label class="bigger" for="cocktail-search">Search by cocktail name</label>
+        <input class="input1" type="search" id="cocktail-search">
+        <button class="name-search button is-primary" id="name-search">Search</button>
+        </div>
+        <!-- empty div for search history -->
+        <div class="search-history" id="search-history">
+        </div>
+        <!-- empty div for recipe display -->
+        <div class="recipe-display" id="recipe-display">
+            <ul class="list" id="list"></ul>
+        </div>
+        <footer>
+            <p class="bigger">Random Quote:</p>
+            <p class="quote bigger"></p>
+        </footer>
+    </div>
+    </div>
+<script type="text/javascript" src="config.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src=./script.js></script>  
+</body>
+
+</html>
